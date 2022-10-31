@@ -1,0 +1,46 @@
+
+app:
+  application:
+    name: test
+    port: 8079
+    version: 0.0.1
+  cloud:
+    nacos:
+      discovery:
+        serverAddr: 192.168.0.254:30848
+        namespace: 9d5d3937-27a6-45a4-b300-e30dc3656a90
+      config:
+        sharedConfigs:
+          - dataId: shared-common.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-mq.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-es.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-push.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-biz.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-sys.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-declare.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-auth.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-service.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-other.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: shared-db-jpa.yaml
+            group: DEFAULT_GROUP
+            refresh: true

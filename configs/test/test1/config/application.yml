@@ -1,0 +1,6 @@
+
+app:
+  application:
+    name: test
+    port: 8071
+    version: 0.0.1
