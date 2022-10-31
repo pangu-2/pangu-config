@@ -1,3 +1,6 @@
-## 项目名称
-> 
+## 引入
+
+```bash
+go get github.com/pangu-2/pangu-config
+```
 
