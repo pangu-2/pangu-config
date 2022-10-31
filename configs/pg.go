@@ -3,6 +3,7 @@ package configs
 import "github.com/pangu-2/pangu-config/configs/pg"
 
 type Pg struct {
+	Jwt           pg.Jwt           `json:"jwt"`
 	Upload        pg.Upload        `json:"upload"`
 	Redis         pg.Redis         `json:"redis"`
 	Template      pg.Template      `json:"template"`

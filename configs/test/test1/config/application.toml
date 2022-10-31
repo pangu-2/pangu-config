@@ -3,3 +3,19 @@
 name = "test"
 port = 8071
 version = "0.0.1"
+
+
+# jwt
+[pg.jwt]
+
+#后台管理员
+[pg.jwt.admin]
+secret = "ssssssssaaa234324324324dsfdfs"
+# 过期时间，单位 分钟
+expire = 3
+
+#前台用户
+[pg.jwt.user]
+secret = "bbbbbbbbbbb234324324324dsfdfs"
+# 过期时间，单位 分钟
+expire = 3
