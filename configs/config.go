@@ -4,7 +4,6 @@ import (
 	app2 "github.com/pangu-2/pangu-config/configs/app"
 	"github.com/pangu-2/pangu-config/configs/app/cloud"
 	"github.com/pangu-2/pangu-config/configs/pg"
-	lzb2 "github.com/pangu-2/pangu-config/configs/pg"
 )
 
 type ConfigPg struct {
@@ -62,11 +61,16 @@ func GetTemplate() pg.Template {
 	return configPg.Pg.Template
 }
 
-func GetLzb() Pg {
+func GetPg() Pg {
 	return configPg.Pg
 }
-func GetLzbUpload() lzb2.Upload {
+
+func GetPgUpload() pg.Upload {
 	return configPg.Pg.Upload
+}
+
+func GetPgJwt() pg.Jwt {
+	return configPg.Pg.Jwt
 }
 
 func GetRocketmq() pg.Rocketmq {
