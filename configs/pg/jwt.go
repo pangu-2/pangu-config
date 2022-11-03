@@ -12,6 +12,8 @@ type JwtConfig struct {
 type Jwt struct {
 	// 后台
 	Admin JwtConfig `json:"admin"`
-	// 前台
+	// 用户
 	User JwtConfig `json:"user"`
+	// 前台
+	Web JwtConfig `json:"web"`
 }
